@@ -18,7 +18,6 @@ namespace System.Windows.Automation
         private UIAutomationClient.IUIAutomationCacheRequest _obj;
         private object _lock;
         private int _cRef;
-        [ThreadStatic]
         private static Stack _cacheStack;
         internal static readonly CacheRequest DefaultCacheRequest = new CacheRequest();
 
